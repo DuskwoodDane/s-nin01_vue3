@@ -1,10 +1,8 @@
 <template>
-  <article>
-    <span id="sa">template</span>
-  </article>
+  <div ></div>
 </template>
 
-<!-- filename: HomeView.vue -->
+
 <script lang='ts' setup>
 import { ref, reactive, toRefs, onBeforeMount, onMounted, watchEffect, computed } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
@@ -37,7 +35,4 @@ defineExpose({
 
 </script>
 <style scoped lang='scss'>
-#sa {
-  @include font(30px, bold, green)
-}
 </style>

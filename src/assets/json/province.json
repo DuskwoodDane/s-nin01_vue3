@@ -1,0 +1,410 @@
+[
+  {
+    "name": "上海",
+    "update_time": 1670981945062,
+    "adcode": "310000",
+    "comment": "因未公布分区死亡和治愈，仅展示累计确诊和现存确诊",
+    "data": {
+      "confirmed_count": 64978,
+      "suspected_count": 393,
+      "cured_count": 64098,
+      "dead_count": 595
+    }
+  },
+  {
+    "name": "云南",
+    "update_time": 1671010524534,
+    "adcode": "530000",
+    "comment": "云南卫健委未明确部分治愈病例的地市归属，因此各地市的现存确诊存在一定偏差。",
+    "data": {
+      "confirmed_count": 5007,
+      "suspected_count": 23,
+      "cured_count": 4072,
+      "dead_count": 2
+    }
+  },
+  {
+    "name": "内蒙古",
+    "update_time": 1671007440842,
+    "adcode": "150000",
+    "comment": "",
+    "data": {
+      "confirmed_count": 8237,
+      "suspected_count": 35,
+      "cured_count": 7962,
+      "dead_count": 1
+    }
+  },
+  {
+    "name": "北京",
+    "update_time": 1671006229445,
+    "adcode": "110000",
+    "comment": "北京卫健委未明确大部分治愈与死亡病例的分区归属，因此北京市下辖分区的现存确诊暂无法获取。",
+    "data": {
+      "confirmed_count": 25249,
+      "suspected_count": 164,
+      "cured_count": 14283,
+      "dead_count": 13
+    }
+  },
+  {
+    "name": "台湾",
+    "update_time": 1670923782041,
+    "adcode": "710000",
+    "comment": "",
+    "data": {
+      "confirmed_count": 8498195,
+      "suspected_count": 485,
+      "cured_count": 13742,
+      "dead_count": 14722
+    }
+  },
+  {
+    "name": "吉林",
+    "update_time": 1671007719550,
+    "adcode": "220000",
+    "comment": "",
+    "data": {
+      "confirmed_count": 40481,
+      "suspected_count": 19,
+      "cured_count": 40422,
+      "dead_count": 5
+    }
+  },
+  {
+    "name": "四川",
+    "update_time": 1670984256962,
+    "adcode": "510000",
+    "comment": "",
+    "data": {
+      "confirmed_count": 11315,
+      "suspected_count": 22,
+      "cured_count": 9929,
+      "dead_count": 5
+    }
+  },
+  {
+    "name": "天津",
+    "update_time": 1670918930339,
+    "adcode": "120000",
+    "comment": "",
+    "data": {
+      "confirmed_count": 2627,
+      "suspected_count": 50,
+      "cured_count": 2566,
+      "dead_count": 3
+    }
+  },
+  {
+    "name": "宁夏",
+    "update_time": 1671010524534,
+    "adcode": "640000",
+    "comment": "",
+    "data": {
+      "confirmed_count": 238,
+      "suspected_count": 0,
+      "cured_count": 237,
+      "dead_count": 0
+    }
+  },
+  {
+    "name": "安徽",
+    "update_time": 1670900601973,
+    "adcode": "340000",
+    "comment": "",
+    "data": {
+      "confirmed_count": 1699,
+      "suspected_count": 2,
+      "cured_count": 1654,
+      "dead_count": 6
+    }
+  },
+  {
+    "name": "山东",
+    "update_time": 1671009366565,
+    "adcode": "370000",
+    "comment": "",
+    "data": {
+      "confirmed_count": 4564,
+      "suspected_count": 14,
+      "cured_count": 4131,
+      "dead_count": 8
+    }
+  },
+  {
+    "name": "山西",
+    "update_time": 1671006746139,
+    "adcode": "140000",
+    "comment": "",
+    "data": {
+      "confirmed_count": 5006,
+      "suspected_count": 64,
+      "cured_count": 3882,
+      "dead_count": 0
+    }
+  },
+  {
+    "name": "广东",
+    "update_time": 1671010010975,
+    "adcode": "440000",
+    "comment": "广东卫健委未明确部分治愈病例的地市归属，因此各地市的现存确诊存在一定偏差。",
+    "data": {
+      "confirmed_count": 55674,
+      "suspected_count": 25,
+      "cured_count": 46123,
+      "dead_count": 8
+    }
+  },
+  {
+    "name": "广西",
+    "update_time": 1670899101153,
+    "adcode": "450000",
+    "comment": "",
+    "data": {
+      "confirmed_count": 2431,
+      "suspected_count": 0,
+      "cured_count": 2394,
+      "dead_count": 2
+    }
+  },
+  {
+    "name": "新疆",
+    "update_time": 1671010524534,
+    "adcode": "650000",
+    "comment": "",
+    "data": {
+      "confirmed_count": 2632,
+      "suspected_count": 0,
+      "cured_count": 2602,
+      "dead_count": 3
+    }
+  },
+  {
+    "name": "江苏",
+    "update_time": 1671007820172,
+    "adcode": "320000",
+    "comment": "",
+    "data": {
+      "confirmed_count": 3796,
+      "suspected_count": 3,
+      "cured_count": 3667,
+      "dead_count": 0
+    }
+  },
+  {
+    "name": "江西",
+    "update_time": 1670895396900,
+    "adcode": "360000",
+    "comment": "",
+    "data": {
+      "confirmed_count": 1547,
+      "suspected_count": 0,
+      "cured_count": 1536,
+      "dead_count": 1
+    }
+  },
+  {
+    "name": "河北",
+    "update_time": 1670984698238,
+    "adcode": "130000",
+    "comment": "河北卫健委未明确部分治愈病例的地市归属，因此各地市的现存确诊存在一定偏差。",
+    "data": {
+      "confirmed_count": 2839,
+      "suspected_count": 0,
+      "cured_count": 2774,
+      "dead_count": 7
+    }
+  },
+  {
+    "name": "河南",
+    "update_time": 1670921806275,
+    "adcode": "410000",
+    "comment": "",
+    "data": {
+      "confirmed_count": 8692,
+      "suspected_count": 1,
+      "cured_count": 6219,
+      "dead_count": 23
+    }
+  },
+  {
+    "name": "浙江",
+    "update_time": 1670985189311,
+    "adcode": "330000",
+    "comment": "2月10日通报核减的12例在浙江省治愈的外省病例，根据国家最新要求重新纳入累计病例。",
+    "data": {
+      "confirmed_count": 5858,
+      "suspected_count": 68,
+      "cured_count": 4568,
+      "dead_count": 1
+    }
+  },
+  {
+    "name": "海南",
+    "update_time": 1670899992994,
+    "adcode": "460000",
+    "comment": "",
+    "data": {
+      "confirmed_count": 10287,
+      "suspected_count": 18,
+      "cured_count": 9103,
+      "dead_count": 6
+    }
+  },
+  {
+    "name": "湖北",
+    "update_time": 1671009467638,
+    "adcode": "420000",
+    "comment": "4.17武汉市订正数据，武汉死亡核增1290，确诊核增325，治愈核减965",
+    "data": {
+      "confirmed_count": 68862,
+      "suspected_count": 25,
+      "cured_count": 64071,
+      "dead_count": 4512
+    }
+  },
+  {
+    "name": "湖南",
+    "update_time": 1671009561123,
+    "adcode": "430000",
+    "comment": "",
+    "data": {
+      "confirmed_count": 2442,
+      "suspected_count": 2,
+      "cured_count": 2122,
+      "dead_count": 4
+    }
+  },
+  {
+    "name": "甘肃",
+    "update_time": 1671010524534,
+    "adcode": "620000",
+    "comment": "",
+    "data": {
+      "confirmed_count": 1561,
+      "suspected_count": 0,
+      "cured_count": 1529,
+      "dead_count": 2
+    }
+  },
+  {
+    "name": "福建",
+    "update_time": 1671007820172,
+    "adcode": "350000",
+    "comment": "",
+    "data": {
+      "confirmed_count": 7326,
+      "suspected_count": 15,
+      "cured_count": 6520,
+      "dead_count": 1
+    }
+  },
+  {
+    "name": "西藏",
+    "update_time": 1670921806275,
+    "adcode": "540000",
+    "comment": "",
+    "data": {
+      "confirmed_count": 1522,
+      "suspected_count": 0,
+      "cured_count": 1515,
+      "dead_count": 0
+    }
+  },
+  {
+    "name": "贵州",
+    "update_time": 1670921806275,
+    "adcode": "520000",
+    "comment": "3月17日贵阳市新增1例境外输入无症状感染者",
+    "data": {
+      "confirmed_count": 1756,
+      "suspected_count": 0,
+      "cured_count": 1514,
+      "dead_count": 2
+    }
+  },
+  {
+    "name": "辽宁",
+    "update_time": 1671007719550,
+    "adcode": "210000",
+    "comment": "",
+    "data": {
+      "confirmed_count": 3023,
+      "suspected_count": 0,
+      "cured_count": 2683,
+      "dead_count": 2
+    }
+  },
+  {
+    "name": "重庆",
+    "update_time": 1670899447481,
+    "adcode": "500000",
+    "comment": "",
+    "data": {
+      "confirmed_count": 8542,
+      "suspected_count": 15,
+      "cured_count": 6627,
+      "dead_count": 7
+    }
+  },
+  {
+    "name": "陕西",
+    "update_time": 1671010524534,
+    "adcode": "610000",
+    "comment": "",
+    "data": {
+      "confirmed_count": 5462,
+      "suspected_count": 4,
+      "cured_count": 4846,
+      "dead_count": 3
+    }
+  },
+  {
+    "name": "青海",
+    "update_time": 1670901356725,
+    "adcode": "630000",
+    "comment": "",
+    "data": {
+      "confirmed_count": 510,
+      "suspected_count": 0,
+      "cured_count": 482,
+      "dead_count": 0
+    }
+  },
+  {
+    "name": "香港",
+    "update_time": 1670981548103,
+    "adcode": "810000",
+    "comment": "",
+    "data": {
+      "confirmed_count": 478020,
+      "suspected_count": 181,
+      "cured_count": 103631,
+      "dead_count": 11021
+    }
+  },
+  {
+    "name": "黑龙江",
+    "update_time": 1671007719550,
+    "adcode": "230000",
+    "comment": "黑龙江卫健委未明确部分治愈病例的地市归属，因此各地市的现存确诊存在一定偏差。",
+    "data": {
+      "confirmed_count": 5389,
+      "suspected_count": 430,
+      "cured_count": 4984,
+      "dead_count": 13
+    }
+  },
+  {
+    "name": "澳门",
+    "update_time": 1670981548103,
+    "adcode": "820000",
+    "comment": "确诊病例中含9例境外输入病例",
+    "data": {
+      "confirmed_count": 1142,
+      "suspected_count": 9,
+      "cured_count": 804,
+      "dead_count": 6
+    }
+  }
+]
