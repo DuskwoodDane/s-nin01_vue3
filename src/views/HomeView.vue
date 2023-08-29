@@ -1,6 +1,7 @@
 <template>
-  <article>
+  <article class="main">
     <span id="sa">template</span>
+    <BgView />
   </article>
 </template>
 
@@ -8,6 +9,9 @@
 <script lang='ts' setup>
 import { ref, reactive, toRefs, onBeforeMount, onMounted, watchEffect, computed } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
+
+// @ts-ignore 
+import BgView from '@/views/BgView/index.vue'
 /**
 * 路由对象
 */
@@ -37,7 +41,7 @@ defineExpose({
 
 </script>
 <style scoped lang='scss'>
-#sa {
-  @include font(30px, bold, green)
+.main {
+  @include set-wh;
 }
 </style>
