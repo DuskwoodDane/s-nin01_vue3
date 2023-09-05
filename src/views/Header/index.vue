@@ -1,6 +1,6 @@
 <template>
   <section class="s-n-transition-bg-tcolor s-n-header">
-    <h1 class="h-title"></h1>
+    <h1></h1>
   </section>
 </template>
 
