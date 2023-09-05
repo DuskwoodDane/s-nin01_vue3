@@ -1,26 +1,13 @@
 <template>
-  <article class="main">
-    <Header />
-    <!-- <BgView /> -->
-  </article>
+  <section class="s-n-transition-bg-tcolor s-n-header">
+    <h1 class="h-title"></h1>
+  </section>
 </template>
 
-<!-- filename: HomeView.vue -->
+<!-- filename: Header.vue -->
 <script lang='ts' setup>
 import { ref, reactive, toRefs, onBeforeMount, onMounted, watchEffect, computed } from 'vue';
-import { useRoute, useRouter } from 'vue-router';
 
-import Header from '@/views/Header/index.vue';
-import BgView from '@/views/BgView/index.vue';
-/**
-* 路由对象
-*/
-const route = useRoute();
-/**
-* 路由实例
-*/
-const router = useRouter();
-//console.log('1-开始创建组件-setup')
 /**
 * 数据部分
 */
@@ -41,7 +28,11 @@ defineExpose({
 
 </script>
 <style scoped lang='scss'>
-.main {
-  @include set-wh;
+.s-n-header {
+  width: 85%;
+  height: 100px;
+  margin: 0 auto;
+  @include flex-row(center, space-between);
+  color: var(--text-title-color);
 }
 </style>

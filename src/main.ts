@@ -6,6 +6,11 @@ import { createPinia } from 'pinia';
 import App from './App.vue';
 import router from './router';
 
+import '@/styles/theme.scss';
+import '@/styles/reset.scss';
+import '@/styles/common.scss';
+
+
 const app = createApp(App);
 
 app.use(createPinia());
