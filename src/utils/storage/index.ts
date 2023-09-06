@@ -11,7 +11,8 @@ const setItem = (key: LocalStorageType, value: any): void => {
 
 const getItem = <T extends string>(key: LocalStorageType): T => {
   const value = window.localStorage.getItem(key) || '';
-  return JSON.parse(value);
+  console.log('value==', value);
+  return value ? JSON.parse(value) : '';
 };
 
 const removeItem = (key: LocalStorageType) => window.localStorage.removeItem(key);

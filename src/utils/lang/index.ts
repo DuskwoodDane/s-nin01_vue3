@@ -23,9 +23,12 @@ const getValue = (keys: string[], obj: LangMapType) => {
 };
 
 const data = {
-  lang: () => storage.getItem<LangType>('lang'),
+  lang: () => storage.getItem<LangType>('lang') || 'en',
   setLang: (lang: LangType) => storage.setItem('lang', lang),
-    /** 当前语言包(函数形式) */
+  t: (key: string) => {
+    return `${data.$i18nMap()}.${key}`;
+  },
+  /** 当前语言包(函数形式) */
   $i18n: (keys: string) => {
     const _keys = keys.split('.');
     return getValue(_keys, _map[data.lang()]);
