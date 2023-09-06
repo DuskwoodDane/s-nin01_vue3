@@ -1,9 +1,25 @@
 <script setup lang="ts">
-import { RouterView } from 'vue-router'
+import { reactive, provide } from 'vue';
+import { RouterView } from 'vue-router';
+
+import constant from '@/utils/constant';
+import i18nUtils from '@/utils/lang';
+
+import type { ForceLang, LangType } from '@/utils/lang/interface';
+
+const i18nMap = reactive(i18nUtils.$i18nMap());
+const { injectionKey } = constant;
+
+const forceLang: ForceLang = (lang: LangType) => {
+  i18nUtils.setLang(lang);
+  Object.assign(i18nMap, i18nUtils.$i18nMap);
+};
+
+provide(injectionKey.I18NMAP, i18nMap);
+provide(injectionKey.FORCELANG, forceLang);
 </script>
 
 <template>
-
   <RouterView />
 </template>
 
