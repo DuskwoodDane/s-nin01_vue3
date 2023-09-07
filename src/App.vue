@@ -2,8 +2,13 @@
 import { reactive, provide } from 'vue';
 import { RouterView } from 'vue-router';
 
-import constant from '@/utils/constant';
+import constant, { saveDataSource } from '@/utils/constant';
 import i18nUtils from '@/utils/lang';
+
+import countrySource from '@/assets/json/country.json';
+import provinceSource from '@/assets/json/province.json';
+import citiesSource from '@/assets/json/cities.json';
+import provinceCities from '@/assets/json/provinceCities.json';
 
 import type { ForceLang, LangType } from '@/utils/lang/interface';
 
@@ -17,6 +22,14 @@ const forceLang: ForceLang = (lang: LangType) => {
 
 provide(injectionKey.I18NMAP, i18nMap);
 provide(injectionKey.FORCELANG, forceLang);
+
+// 保存数据源
+saveDataSource({
+  [injectionKey.COUNTRY as symbol]: countrySource,
+  [injectionKey.PROVINCE as symbol]: provinceSource,
+  [injectionKey.CITIES as symbol]: citiesSource,
+  [injectionKey.PROVCITIES as symbol]: provinceCities,
+});
 </script>
 
 <template>
