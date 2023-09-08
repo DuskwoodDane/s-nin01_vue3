@@ -1,6 +1,9 @@
 <template>
   <section class="s-n-transition-bg-tcolor s-n-header">
     <h1>{{ i18nMap.title }}</h1>
+    <div class="s-n-theme-transition-bg h-search">
+      
+    </div>
     <ul class="h-list">
       <li class="h-l-title">
         {{ i18nMap.header.menus.title }}
@@ -61,6 +64,12 @@ const close = () => (isOpen.value = false);
   h1 {
     font-size: 38px;
   }
+  .h-search {
+    flex: 2;
+    height: 55px;
+    padding: 0 70px;
+    background-color: red
+  }
   .h-list {
     @include flex-row;
     .h-l-title {
@@ -105,21 +114,4 @@ const close = () => (isOpen.value = false);
     }
   }
 }
-// <ul class="h-list">
-//       <li class="h-l-title">
-//         {{ i18nMap.header.menus.title }}
-//         <ul class="h-l-t-extends">
-//           <li
-//             v-for="(text, index) of options"
-//             class="h-l-t-u-item"
-//             :key="index"
-//             @click="() => open(text(), index)"
-//             >{{ text() }}</li>
-//         </ul>
-//       </li>
-//       <li class="h-l-title h-l-line">|</li>
-//       <li class="h-l-title h-l-github">
-//         <a class="s-n-theme-transition-text-color" href="https://github.com/DuskwoodDane/s-nin01_vue3" target="_blank">GiuHub</a>
-//       </li>
-//     </ul>
 </style>

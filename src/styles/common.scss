@@ -1,11 +1,14 @@
+.s-n-theme-transition-bg {
+  transition: background-color 0.3s;
+}
+.s-n-theme-transition-text-color {
+  transition: color 0.35s 0.3s;
+}
 .s-n-transition-bg-tcolor {
   transition: background-color 0.3s, color 0.5s 0.2s;
 }
 .s-n-theme-transition-text-color {
   transition: color 0.35s 0.3s;
-}
-.s-n-theme-transition-bg-tcolor {
-  transition: background-color 0.3s, color 0.5s 0.2s;
 }
 .s-n-data-confirmedCount {
   color: rgb(255, 182, 0);
