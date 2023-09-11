@@ -2,7 +2,7 @@
   <section class="s-n-transition-bg-tcolor s-n-header">
     <h1>{{ i18nMap.title }}</h1>
     <div class="s-n-theme-transition-bg h-search">
-      
+      <Search />
     </div>
     <ul class="h-list">
       <li class="h-l-title">
@@ -27,6 +27,8 @@
 <!-- filename: Header.vue -->
 <script lang='ts' setup>
 import { ref, reactive, inject } from 'vue';
+
+import Search from '@/components/Search/index.vue';
 
 import constant from '@/utils/constant';
 
@@ -68,7 +70,7 @@ const close = () => (isOpen.value = false);
     flex: 2;
     height: 55px;
     padding: 0 70px;
-    background-color: red
+    // background-color: red
   }
   .h-list {
     @include flex-row;
