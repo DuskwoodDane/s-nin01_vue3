@@ -22,27 +22,34 @@
       </li>
     </ul>
   </section>
+  <Drawer :isOpen="isOpen" :title="'test'" @close="close">
+    <component :is="curDrawer" @close="close"></component>
+  </Drawer>
 </template>
 
-<!-- filename: Header.vue -->
+<!-- filename: MapStyle.vue -->
 <script lang='ts' setup>
 import { ref, reactive, inject } from 'vue';
 
 import Search from '@/components/Search/index.vue';
+import Drawer from '@/components/Drawer/index.vue';
+import MapStyle from '@/views/Header/Menus/MapStyle/index.vue';
 
 import constant from '@/utils/constant';
+
+const menusComponents = [MapStyle];
 
 const { injectionKey, defaultValue } = constant;
 
 const i18nMap = inject(injectionKey.I18NMAP, defaultValue.i18nMap);
 
 const drawerTitle = ref('');
+const curDrawer = ref();
 
 /** 抽屉开关 */
 const isOpen = ref(false);
 /** 渲染的菜单选项 */
 const options = reactive([
-  () => i18nMap.header.menus.signature.title,
   () => i18nMap.header.menus.style.title,
   () => i18nMap.header.menus.i18n.title
 ] as const);
@@ -50,6 +57,7 @@ const options = reactive([
 const open = (title: string, key: number) => {
   isOpen.value = true;
   drawerTitle.value = title;
+  curDrawer.value = menusComponents[key];
  };
 
 const close = () => (isOpen.value = false);
