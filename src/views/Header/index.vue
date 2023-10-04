@@ -34,10 +34,11 @@ import { ref, reactive, inject } from 'vue';
 import Search from '@/components/Search/index.vue';
 import Drawer from '@/components/Drawer/index.vue';
 import MapStyle from '@/views/Header/Menus/MapStyle/index.vue';
+import I18n from '@/views/Header/Menus/I18n/index.vue';
 
 import constant from '@/utils/constant';
 
-const menusComponents = [MapStyle];
+const menusComponents = [MapStyle, I18n];
 
 const { injectionKey, defaultValue } = constant;
 

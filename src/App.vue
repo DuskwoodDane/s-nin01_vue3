@@ -16,8 +16,9 @@ const i18nMap = reactive(i18nUtils.$i18nMap());
 const { injectionKey } = constant;
 
 const forceLang: ForceLang = (lang: LangType) => {
+
   i18nUtils.setLang(lang);
-  Object.assign(i18nMap, i18nUtils.$i18nMap);
+  Object.assign(i18nMap, i18nUtils.$i18nMap());
 };
 
 provide(injectionKey.I18NMAP, i18nMap);
