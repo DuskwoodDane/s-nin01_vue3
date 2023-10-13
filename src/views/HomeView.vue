@@ -2,6 +2,7 @@
   <article class="main">
     <Header />
     <!-- <BgView /> -->
+    <AMap />
   </article>
 </template>
 
@@ -12,6 +13,7 @@ import { useRoute, useRouter } from 'vue-router';
 
 import Header from '@/views/Header/index.vue';
 import BgView from '@/views/BgView/index.vue';
+import AMap from '@/views/AMap/index.vue';
 /**
 * 路由对象
 */

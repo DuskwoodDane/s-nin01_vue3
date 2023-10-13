@@ -13,6 +13,7 @@ dist
 dist-ssr
 coverage
 *.local
+s_nin.ts
 
 /cypress/videos/
 /cypress/screenshots/
