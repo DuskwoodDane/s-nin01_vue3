@@ -22,7 +22,6 @@ export interface AdaptationData {
       data.theme = 'dark';
       data.dark.forEach((f) => f());
     } else {
-      console.log(222);
       data.theme = '_light';
       data.light.forEach((f) => f());
     }

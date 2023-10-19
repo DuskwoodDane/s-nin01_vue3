@@ -26,6 +26,7 @@
 import { ref, inject } from 'vue';
 
 import constant from '@/utils/constant';
+import pubsub from '@/utils/pubsub';
 import storage from '@/utils/storage';
 import styleUtils from '@/utils/style';
 
@@ -48,6 +49,8 @@ style?.light.push(() => (order.value = 0));
 const switchStyle = (key: number) => {
   order.value = key;
   storage.setItem('themeId', key);
+  // 切换主题
+  pubsub.publish('switchStyle', { style: _mapStyle[key], key});
 };
 
 </script>

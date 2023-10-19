@@ -19,7 +19,7 @@
 
 <!-- filename: I18n.vue -->
 <script lang='ts' setup>
-import { ref, reactive, inject, nextTick } from 'vue';
+import { inject, nextTick } from 'vue';
 
 import constant from '@/utils/constant';
 import i18nUtils from '@/utils/lang';
@@ -65,7 +65,6 @@ const switchLang: ForceLang = (lang) => {
   emits('close');
   // 更新pubsub中存储的lang
   forceLang(lang);
-  console.log(11, i18nUtils.lang(), i18nMap);
   nextTick(() => {
     message({
       title: _lang().success.title,

@@ -12,6 +12,7 @@ declare module 'vue' {
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Search: typeof import('./src/components/Search/index.vue')['default']
+    SwitchContent: typeof import('./src/components/SwitchContent/index.vue')['default']
     Typewriter: typeof import('./src/components/Typewriter/index.vue')['default']
   }
 }
