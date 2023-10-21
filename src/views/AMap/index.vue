@@ -12,10 +12,11 @@
       <ToolBar />
       <ControlBar />
       <Geolocation />
+      <LayerDistrict />
     </el-amap>
 
     <div class="m-b-panel m-b-left">
-      <Details />
+      <PaneLeft />
     </div>
   </section>
 </template>
@@ -27,7 +28,8 @@ import ControlScale from './ControlScale/index.vue';
 import ToolBar from './ToolBar/index.vue';
 import ControlBar from './ControlBar/index.vue';
 import Geolocation from './Geolocation/index.vue';
-import Details from './PanelLeft/index.vue';
+import LayerDistrict from './LayerDistrict/index.vue';
+import PaneLeft from './PanelLeft/index.vue';
 
 import pubsub from '@/utils/pubsub';
 import constant from '@/utils/constant';
@@ -37,11 +39,9 @@ import storage from '@/utils/storage';
 
 import type { SwitchStyle } from '@/utils/interface/pubsub';
 
-
 const { injectionKey, defaultValue } = constant;
 
 const i18nMap = inject(injectionKey.I18NMAP, defaultValue.i18nMap);
-
 
 const amap = {
   // 高德地图实例

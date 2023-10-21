@@ -82,7 +82,6 @@ const deadCount = ref<PanelCounts>('0'); /** 死亡人数 */
 
 let curShowDataPanelArea = '';
 const reflectCountry = ref(defaultValue.country);
-console.log(555, country);
 const area = ref('地区');
 const time = ref('时间');
 const comment = ref('备注');
@@ -103,7 +102,7 @@ const updateData = (_data: SearchAreaDataType) => {
   comment.value = _data.comment;
 
   // 高亮选中地区
-  // pubsub.publish('highArea', _data.adcode);
+  pubsub.publish('highArea', _data.adcode);
   console.log('data==666', data);
   // 初始化时忽略提示
   if (name === '全国') return;
