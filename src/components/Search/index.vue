@@ -23,8 +23,10 @@
 import { reactive, toRefs, inject } from 'vue';
 
 import constant from '@/utils/constant';
+import pubsub from '@/utils/pubsub';
 
 import type { ProvOrCityData } from '@/utils/interface/datas';
+
 
 const { injectionKey, defaultValue } = constant;
 
@@ -40,10 +42,6 @@ const search = reactive({
   empty: false
 });
 
-const toDataPanel = (area: ProvOrCityData) => { 
-  console.log('area', area);
-};
-
 const onBlur = (e?: any) => {
   if (e && !e?.relatedTarget) return;
   search.content = '';
@@ -53,10 +51,8 @@ const onBlur = (e?: any) => {
 
 const onChange = () => {
   if (!search.content) return onBlur();
-
   const areaArr = [] as ProvOrCityData[];
-  provCities.forEach((item, index) => {
-    console.log(index);
+  provCities.forEach((item) => {
     /** 精准匹配 */
     const exact = new RegExp(search.content).test(item.name);
     /** 模糊匹配 */
@@ -73,8 +69,10 @@ const onChange = () => {
   search.empty = !areaArr.length;
 };
 
-// 使用toRefs解构
-// let { } = { ...toRefs(data) }
+const toDataPanel = (area: ProvOrCityData) => { 
+  pubsub.publish('searchAreaData', area);
+  onBlur();
+};
 
 defineExpose({
   ...toRefs(search)

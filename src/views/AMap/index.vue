@@ -18,6 +18,15 @@
     <div class="m-b-panel m-b-left">
       <PaneLeft />
     </div>
+
+    <div class="m-b-panel m-b-right">
+      <ColorClassify />
+    </div>
+
+    <div class="m-b-rest">
+      <ResetMapPos @reset="reset"/>
+    </div>
+
   </section>
 </template>
 
@@ -30,6 +39,8 @@ import ControlBar from './ControlBar/index.vue';
 import Geolocation from './Geolocation/index.vue';
 import LayerDistrict from './LayerDistrict/index.vue';
 import PaneLeft from './PanelLeft/index.vue';
+import ColorClassify from './ColorClassify/indx.vue';
+import ResetMapPos from './ResetMapPos/index.vue';
 
 import pubsub from '@/utils/pubsub';
 import constant from '@/utils/constant';
@@ -82,6 +93,7 @@ const init = (e: any) => {
   amap.e.setFeatures(['bg', 'road']);
 };
 
+// 切换地图主题样式
 const switchStyle = ({ style, key }: SwitchStyle) => {
   const lang = () => i18nMap.header.menus.style;
 
@@ -98,7 +110,29 @@ const switchStyle = ({ style, key }: SwitchStyle) => {
     title: lang().globalMsg.success.title,
     content: lang().globalMsg.success.content
   });
+};
 
+const reset = () => {
+  // 判断缩放等级是否一致
+  const isZoom = amap.e.getZoom() === _zoom;
+  // 判断center是否一致
+  const { KL, KT } = amap.e.getCenter();
+  const [_KL, _KT] = _center;
+  const isReset = isZoom && KL === _KL && KT === _KT;
+  const lang = () => i18nMap.body.amap.resetPos.globalMsg;
+  console.log(isReset, amap.e.getCenter(), _center);
+  if (isReset) return message({
+    title: lang().warn.title,
+    content: lang().warn.content,
+    type: 'warn'
+  });
+  // 重置缩放等级与中心点位置
+  amap.e.setZoom(_zoom);
+  amap.e.setCenter(_center);
+  message({
+    title: lang().success.title,
+    content: lang().success.content
+  });
 };
 
 pubsub.subscribe('switchStyle', (_, styleData) => switchStyle(styleData));
