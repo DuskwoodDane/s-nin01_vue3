@@ -99,7 +99,8 @@ const en = {
         ncov: {
             details: {
                 text1: 'current area',
-                text2: 'time when data was last updated'
+                text2: 'time when data was last updated',
+                text3: 'Nationwide'
             },
             data: {
                 text1: 'confirmed count',

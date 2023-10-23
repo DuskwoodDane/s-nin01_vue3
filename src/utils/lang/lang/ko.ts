@@ -109,7 +109,8 @@ const ko = {
         ncov: {
             details: {
                 text1: '현재 지역',
-                text2: '데이터의 마지막 갱신 시간'
+                text2: '데이터의 마지막 갱신 시간',
+                text3: '전국'
             },
             data: {
                 text1: '누적 확진자수',

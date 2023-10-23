@@ -1,7 +1,7 @@
 <template>
   <article class="main">
     <Header />
-    <!-- <BgView /> -->
+    <BgView />
     <AMap />
   </article>
 </template>

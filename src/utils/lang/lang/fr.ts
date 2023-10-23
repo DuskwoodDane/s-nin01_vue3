@@ -109,7 +109,8 @@ const fr = {
         ncov: {
             details: {
                 text1: 'La région actuelle',
-                text2: 'Date dernière mise à jour des données'
+                text2: 'Date dernière mise à jour des données',
+                text3: 'Dans tout le pays'
             },
             data: {
                 text1: 'Nombre de diagnostics cumulés',

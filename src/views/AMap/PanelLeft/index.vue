@@ -95,7 +95,6 @@ const updateData = (_data: SearchAreaDataType) => {
   suspectedCount.value = thousands(data.suspected_count)!;
   curedCount.value = thousands(data.cured_count)!;
   deadCount.value = thousands(data.dead_count)!;
-
   // 更新地区数据
   area.value = name;
   time.value = getDateText(update_time);
@@ -103,7 +102,6 @@ const updateData = (_data: SearchAreaDataType) => {
 
   // 高亮选中地区
   pubsub.publish('highArea', _data.adcode);
-  console.log('data==666', data);
   // 初始化时忽略提示
   if (name === '全国') return;
   // 禁止消息
@@ -133,7 +131,6 @@ onMounted(() => {
 
 // 默认展示全国
 watch(reflectCountry, (v) => {
-  console.log(111);
   updateData({ ...v, name: '全国', adcode: '100000' });
 });
 

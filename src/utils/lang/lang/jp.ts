@@ -109,7 +109,8 @@ const jp = {
         ncov: {
             details: {
                 text1: '現在の地域',
-                text2: 'データ最終更新時間'
+                text2: 'データ最終更新時間',
+                text3: '全国'
             },
             data: {
                 text1: '累計感染者数',

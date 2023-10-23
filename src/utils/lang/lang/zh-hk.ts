@@ -96,7 +96,8 @@ const zh_hk = {
         ncov: {
             details: {
                 text1: '當前地區',
-                text2: '數據最後更新時間'
+                text2: '數據最後更新時間',
+                text3: '全國'
             },
             data: {
                 text1: '累計確診人數',

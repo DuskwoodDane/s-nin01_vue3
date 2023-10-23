@@ -99,7 +99,8 @@ const zh_cn = {
         ncov: {
             details: {
                 text1: '当前地区',
-                text2: '数据最后更新时间'
+                text2: '数据最后更新时间',
+                text3: '全国'
             },
             data: {
                 text1: '累计确诊人数',
